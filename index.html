@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script>
+
+        // ping 1.1.1.1 every second and log the latency with javascript
+        setInterval(function() {
+            var start = new Date().getTime();
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "http://1.1.1.1", false);
+            xhr.send();
+            var end = new Date().getTime();
+            var time = end - start;
+            console.log(time);
+        }, 1000);
+
+        
+
+    </script>
+
+</head>
+
+
+
+</html>
